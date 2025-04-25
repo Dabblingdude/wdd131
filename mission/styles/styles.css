@@ -1,3 +1,52 @@
-h1 {
+
+.page {
+  width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  border: 1px solid rgb(179, 179, 179); 
+  font-size: 19px;
+}
+
+header {
   text-align: center;
+  letter-spacing: 2px
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+#school_name {
+  color:#006EB6;
+  margin-bottom: 2px;
+}
+
+hr {
+  width: 565px;
+  height: 1px;
+  background-color: rgb(223, 223, 223);
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+main {
+  margin: auto 120px;
+  line-height: 1.5;
+}
+
+.italicize {
+  font-style: italic;
+}
+
+ol li {
+  padding-bottom: 15px;
+}
+
+#logo {
+  width: 150px;
+  display: block;
+  margin: auto auto;
+  padding-top: 20px;
 }
