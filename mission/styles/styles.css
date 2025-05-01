@@ -1,15 +1,23 @@
-
 .page {
   width: 800px;
   margin: 40px auto;
   padding: 40px;
-  border: 1px solid rgb(179, 179, 179); 
+  border: 1px solid rgb(179, 179, 179);
   font-size: 19px;
+}
+
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+.dark h2 {
+  color: rgb(160, 212, 237);
 }
 
 header {
   text-align: center;
-  letter-spacing: 2px
+  letter-spacing: 2px;
 }
 
 header h1 {
@@ -18,11 +26,12 @@ header h1 {
 }
 
 #school_name {
-  color:#006EB6;
+  color: #006eb6;
   margin-bottom: 2px;
 }
 
-hr { /* Line under the school name */
+hr {
+  /* Line under the school name */
   width: 565px;
   height: 1px;
   background-color: rgb(223, 223, 223);
