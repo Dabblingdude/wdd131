@@ -23,7 +23,7 @@ function handleResize() {
         menu.classList.remove("hide");
     }
 
-    else if (window.innerWidth < 1000) {
+    else {
         const menu = document.getElementById('menu');
 
         menu.classList.add("hide");
