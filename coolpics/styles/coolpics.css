@@ -89,7 +89,7 @@ footer {
     margin: auto;
   }
 
-  button {
+  nav button {
     display: none;
   }
 
@@ -132,8 +132,8 @@ dialog img {
 
 .close-viewer {
   position: absolute;
-  top: 100px;
-  right: 5%;
+  top: 2.2rem;
+  right: -2.4rem;
   font-size: 2em;
   background: #f45b69;
   color: white;
