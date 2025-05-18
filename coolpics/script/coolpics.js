@@ -1,12 +1,8 @@
 const menuButton = document.querySelector("button");
 
-const gallery = document.getElementsByClassName("gallery")
-
 menuButton.addEventListener("click", buttonPressed);
 
 window.addEventListener("resize", handleResize);
-
-gallery.addEventListener('click', openModal(event));
 
 
 function buttonPressed() {
@@ -22,25 +18,41 @@ function buttonPressed() {
 }
 
 function handleResize() {
+    const menu = document.getElementById('menu');
     if (window.innerWidth > 1000) {
-        const menu = document.getElementById('menu');
-
         menu.classList.remove("hide");
     }
-
+    
     else {
-        const menu = document.getElementById('menu');
-
         menu.classList.add("hide");
     }
 }
 
-function openModal(e) {
+const gallery = document.querySelector(".gallery")
+const modal = document.querySelector("dialog");
+const modalImage = document.getElementById("modal-img");
+const closeButton = document.querySelector(".close-viewer");
+
+gallery.addEventListener('click', openModal);
+closeButton.addEventListener("click", () => {
+    modal.close();
+});
+
+modal.addEventListener('click', (event) => {
+  if (!modalImage.contains(event.target) && !closeButton.contains(event.target)) {
+    modal.close();
+  }
+});
+
+function openModal(event) {
     const img = event.target.closest('img');
+    if (!img) return;
+
     const src = img.getAttribute('src');
     const alt = img.getAttribute('alt') || '';
     const full = src.split('-')[0] + '-full.jpeg';
 
     modalImage.src = full;
     modalImage.alt = alt;
+    modal.showModal();
 }
