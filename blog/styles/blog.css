@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-    --primary-color: #EFC69B;
-    --secondary-color: #AF1B3F;
-    --accent-color: #473144;
-    --text-dark: #333;
-    --text-light: #ebebeb;
-    --body-font: Arial, Helvetica, sans-serif;
-    --headline-font: Lora, Impact, serif;
+  --primary-color: #efc69b;
+  --secondary-color: #af1b3f;
+  --accent-color: #473144;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --body-font: Arial, Helvetica, sans-serif;
+  --headline-font: Lora, Impact, serif;
 }
 
 body {
@@ -23,112 +23,109 @@ h1 {
   margin: 1em;
 }
 
-a, h2 {
-    color: var(--secondary-color);
-    text-decoration: none;
+a,
+h2 {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 h2 {
-    font-family: var(--headline-font);
+  font-family: var(--headline-font);
 }
 
 p {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
 
 nav ul {
-    display: grid;
-    grid-template-columns: repeat(3, 85px);
-    list-style-type: none;
-    justify-content: end;
-    margin-right: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 85px);
+  list-style-type: none;
+  justify-content: end;
+  margin-right: 40px;
 }
 
 hr {
-    height: 2px;
-    background-color: var(--primary-color);
-    border: none;
-    width: 100%;
-    margin-top: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  border: none;
+  width: 100%;
+  margin-top: 0;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 40px;
-    width: 95%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+  width: 95%;
 }
 
 #filter-div {
-    border: solid;
-    border-color: var(--primary-color);
-    border-width: 2px;
-    grid-column: 2/3;
-    grid-row: 1/3;
-    justify-items: left;
+  border: solid;
+  border-color: var(--primary-color);
+  border-width: 2px;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  justify-items: left;
 }
 
-.bookList-grid{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 30px;
-    row-gap: 10px;
-    margin-bottom: 3em;
+.bookList-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  column-gap: 30px;
+  margin-bottom: -12em;
 }
 
-.date, .genre, .ages, .stars {
-    text-align: right;
-    grid-column: 1;
+.right-grid {
+  grid-column: 2/3;
+}
+
+.left-grid {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.date,
+.genre,
+.ages,
+.stars {
+  text-align: right;
+}
+
+.desc,
+.b-title {
+  text-align: left;
+  justify-self: left;
 }
 
 .b-title {
-    text-align: left;
-    justify-self: left;
-    grid-column: 2;
-    margin-bottom: 0.3em;
+  margin-bottom: 0.3em;
 }
 
 .bookList-grid img {
-    grid-column: 2;
-    grid-row: 2/6;
-    height: auto;
-    justify-self: center;
+  justify-self: center;
 }
 
-.desc {
-    grid-column: 2;
-    text-align: left;
-    justify-self: left;
+.skipToContent a {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: yellow;
+  color: black;
+  padding: 8px 16px;
+  z-index: 10;
+  text-decoration: none;
+  font-weight: bold;
+}
+.skipToContent a:focus {
+  top: 0;
 }
 
-.date {
-    grid-row: 1;
-}
-
-.ages {
-    grid-row: 2;
-}
-
-.genre {
-    grid-row: 3;
-}
-
-.stars {
-    grid-row: 4;
-}
-
-.skiptocontent a {
-	position: absolute;
-    top: -40px;
-    left: 0;
-    background: yellow;
-    color: black;
-    padding: 8px 16px;
-    z-index: 10;
-    text-decoration: none;
-    font-weight: bold;
-}
-.skiptocontent a:focus {
-	top:0;
+footer {
+  margin-top: 15em;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.7em;
 }
