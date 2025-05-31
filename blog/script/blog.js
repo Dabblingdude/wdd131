@@ -23,5 +23,59 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+		"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc:
+		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
 	}
 ]
+
+const container = document.getElementById("articles-container");
+
+function buildArticle(article) {
+	const articleDiv = document.createElement('div');
+	articleDiv.classList.add('bookList-grid');
+
+	articleDiv.innerHTML = `
+	<div class = "right-grid">
+		<h2 class = "b-title">${article.title}</h2>
+		<img src="${article.imgSrc}" alt="${article.imgAlt}">
+		<p class = "desc">${article.description}</p>
+	</div>
+	<div class = left-grid>
+		<h3 class = "date">${article.date}</h3>
+		<p class = "ages">${article.ages}</p>
+		<p class = "genre">${article.genre}</p>
+		<p class = "stars">${article.stars}</p>
+	</div>
+	`;
+
+	container.appendChild(articleDiv);
+}
+
+articles.forEach(buildArticle);
+
+/*
+<div class = "bookList-grid">
+	<div class = "right-grid">
+		<h2 class = "b-title">Septimus Heap Book One: Magyk</h2>
+		<img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg" alt="Book cover for Septimus Heap 1">
+		<p class = "desc">If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
+	</div>
+	<div class = left-grid>
+		<h3 class = "date">July 5, 2022</h3>
+		<p class = "ages">10-14</p>
+		<p class = "genre">Fantasy</p>
+		<p class = "stars">****</p>
+	</div>  
+</div>
+*/

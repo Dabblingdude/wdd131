@@ -56,7 +56,7 @@ hr {
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: 40px;
   width: 95%;
 }
@@ -74,8 +74,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  column-gap: 30px;
-  margin-bottom: -12em;
+  column-gap: 0.9em;
+  margin-bottom: 2em;
 }
 
 .right-grid {
@@ -85,12 +85,11 @@ main {
 .left-grid {
   grid-column: 1/2;
   grid-row: 1/2;
-}
-
-.date,
-.genre,
-.ages,
-.stars {
+  margin-top: 0.35em;
+  padding-right: 0.9em;
+  border-right: solid;
+  border-color: var(--primary-color);
+  border-width: 2px;
   text-align: right;
 }
 
@@ -124,8 +123,8 @@ main {
 }
 
 footer {
-  margin-top: 15em;
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 0.7em;
+    margin-top: 2em;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 0.7em;
 }
