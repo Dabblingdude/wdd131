@@ -1,0 +1,79 @@
+body {
+    font-family: "Times New Roman";
+}
+
+#cc-num::placeholder, #card-holder::placeholder, #exp-month::placeholder, #exp-year::placeholder, #cvc::placeholder {
+  font-size: 1.2em;
+}
+
+#ccGrid {
+    display: grid;
+    grid-template-columns: 100px 275px 100px;
+    grid-template-rows: 30px 200px 30px 40px;
+    gap: 25px;
+    justify-self: center;
+    margin-top: 200px;
+}
+
+#ccFront {
+    background-color: lightgray;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+
+    display: grid;
+    grid-template-columns: 230px 105px;
+    grid-template-rows: 70px auto auto;
+    padding: 1.2em;
+    gap: 0.5em 1.2em;
+}
+
+
+#ccFront img {
+    justify-self: end;
+}
+
+.cn {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.cn input {
+    width: 98%;
+    height: 2em;
+}
+
+.ch {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.ch input {
+    width: 95%;
+    height: 2em;
+}
+
+.card-exp {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.card-exp input {
+    width: 40%;
+    height: 2em;
+}
+
+
+#ccBack {
+    background-color: lightgray;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    border-radius: 10px;
+}
+
+button {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
