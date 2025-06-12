@@ -10,7 +10,7 @@ const character = {
             this.health -= 20;
         } 
         else {
-            alert('Character Died');
+            alert('Donkey Kong Died');
         }
     },
 
