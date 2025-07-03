@@ -1,0 +1,67 @@
+body {
+  font-family: Palatino Linotype, sans-serif;
+  background: #f0f4f8;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.9);
+    width: 400px; 
+    margin: 100px auto;
+    background-color: #CB4141;
+}
+
+#image{
+    background: #ECB97F;
+  width: 400px;
+  border-radius: 15px 15px 0 0;
+  }
+
+#name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: -5px 0 20px 0;
+  color: white;
+  padding: 15px 0 15px 35px;
+  background-color: #98532B;
+}
+
+.stats {
+  margin: 10px 15px 7px 35px;
+  text-align: left;
+}
+
+.stats p {
+  margin: 5px 0;
+  color: white;
+  font-size: 1.1em;
+}
+
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ECB97F;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: #6E3E23;
+}
+
+footer {
+    margin-top: 150px;
+    font-size: 0.8em; 
+    text-align: center; 
+    padding: 1em; 
+    color: #292929;
+}
